@@ -1,0 +1,35 @@
+.cabecalho{
+    background-color: var(--bg-chamada-mobile);
+    text-align: center;
+    border-bottom: 1px solid var(--borda-cabecalho-mobile);
+}
+
+.cabecalho__navegacao{
+    margin-top: 1rem;
+}
+
+.cabecalho__item{
+    display: inline-block;
+}
+
+.cabecalho__link{
+    display: inline-block;
+    color: var(--branco);
+    margin: .6rem;
+    transition: all .25s ease-in-out;
+}
+
+.cabecalho__link:hover{
+    color: var(--fonte-link);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cabecalho{
+        display: flex;
+        justify-content: space-around;
+        background-image: url('../img/bg-intro.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

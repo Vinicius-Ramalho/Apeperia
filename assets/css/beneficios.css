@@ -1,0 +1,52 @@
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.beneficios__item{
+    margin: 2rem;
+}
+
+.beneficios__titulo--tempo,
+.beneficios__titulo--foco,
+.beneficios__titulo--especialistas{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: var(--cinza-escuro);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-left: -3rem;
+}
+
+.beneficios__titulo--tempo::before{
+    content: url('../img/icone-relogio.png');
+    padding-right: 1rem;
+}
+
+.beneficios__titulo--foco::before{
+    content: url('../img/icone-dinheiro.png');
+    padding-right: 1rem;
+}
+
+.beneficios__titulo--especialistas::before{
+    content: url('../img/icone-quimica.png');
+    padding-right: 1rem;
+}
+
+.beneficios__texto{
+    max-width: 200px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .beneficios__lista{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 790px;
+    }
+}
